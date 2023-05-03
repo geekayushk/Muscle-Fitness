@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muscle Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* CSS RESET */
+        body {
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("img/gymp.jpg");
+            /*this function will add any image to the background */
+        }
+
+        .left img {
+            width: 108px;
+            filter: invert(100%);
+            /*invert the color of any img*/
+
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 49px auto;
+            /* border: 2px solid purple; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 43px;
+            display: inline-block;
+            /* border: 2px solid green; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            /* makes inline and we can set width and height */
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            /*remove underline from anchor text*/
+            padding: 34px 16px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(180, 177, 177);
+
+        }
+
+        .btn {
+            margin: 0px 10px;
+            padding: 5px 10px;
+            color: white;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 7px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 142px auto;
+            padding: 176px 66px;
+            width: 42%;
+            border-radius: 30px;
+            display: block;
+            
+        }
+
+        .form-group input {
+            text-align: center;
+            margin: 8px auto;
+            border: 2px solid black;
+            width: 280px;
+            padding: 10px;
+            border-radius: 10px;
+            display: block;
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+            font-size: 20px;
+        }
+
+        .container button {
+            display: block;
+            width: 97px;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <!-- Left box for logo -->
+
+        <div class="left">
+            <img src="img/gym logo1.jpg" alt="">
+            <div>Muscle Fitness</div>
+        </div>
+
+        <!-- Mid box for navbar -->
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of Bangalore now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
